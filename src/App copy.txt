@@ -1,0 +1,68 @@
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  // return (
+  //   //<> this is JSX Fragmentation Start this use to use multiple elements in single line
+  //   <>
+  //   <h1>This Web Site Crated By Vishal Sharma</h1>
+  //   <div className="App">
+  //     <header className="App-header">
+  //       <img src={logo} className="App-logo" alt="logo" />
+  //       <p>
+  //         Edit <code>src/App.js</code> and save to reload.
+  //       </p>
+  //       <a
+  //         className="App-link"
+  //         href="https://reactjs.org"
+  //         target="_blank"
+  //         rel="noopener noreferrer"
+  //       >
+  //         Learn React With
+  //       </a>
+  //     </header>
+  //   </div>
+  // </>
+  // );
+  function formatName(user) {
+    return user.firstName + ' ' + user.lastName;
+  }
+  
+  const user = {
+    firstName: 'Harper',
+    lastName: 'Perez'
+  };
+  
+  
+  let name="Vishal";
+  return(
+    
+<> 
+const element = (
+    <h1>
+      Hello, {formatName(user)}!
+    </h1>
+  );
+{/*this is comment line*/}
+<img src={logo} className="App-logo" alt="logo" />
+ <nav>
+      <li>Home</li>
+      <li>Stories</li>
+      <li>About</li>
+      <li>Images</li>
+      <li>Achivements</li>
+    </nav>
+    {/*with {} we can use variable */}    
+    <div className='container'>
+  
+      <h1>Hello {name}</h1>  
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, 
+      quos unde aperiam iusto expedita iure. Molestiae nihil ratione deserunt totam aut quam commodi impedit sit! 
+      Dolor,temporibus repudiandae! Molestias accusamus placeat ipsum minus! Delectus.</p></div>
+    <div className="blank">Vishal Sharma</div>
+    </>
+  
+  );
+}
+
+export default App;
