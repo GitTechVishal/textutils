@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 //import toggleMode from "../App";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 //! Following comment line is function based component
 //! and in letest version of react we have to give default props like this.
 //export default function Navbar({ title = "Set Title Here", aboutText = "Set About Here" }) {
@@ -18,13 +18,21 @@ class Navbar extends React.Component {
         className="navbar navbar-expand-lg navebar-dark bg-dark text-light"
       >
         <div className="container-fluid">
-          <Link
+          {/* <Link
             className="navbar-brand"
             to="/"
             style={{ color: this.props.mode === "dark" ? "white" : "white" }}
           >
             {this.props.title}
           </Link>
+           */}
+          <a
+            className="navbar-brand"
+            href="#"
+            style={{ color: this.props.mode === "dark" ? "white" : "white" }}
+          >
+            {this.props.title}
+          </a>
           <button
             className="navbar-toggler"
             type="button"
@@ -38,7 +46,7 @@ class Navbar extends React.Component {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link
                   className="nav-link active"
                   aria-current="page"
@@ -49,7 +57,7 @@ class Navbar extends React.Component {
                 >
                   {this.props.aboutText}
                 </Link>
-              </li>
+              </li> */}
               {/* <li className="nav-item">
                 <a className="nav-link" href="/">
                   link
